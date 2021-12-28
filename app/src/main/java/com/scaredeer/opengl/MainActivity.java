@@ -16,8 +16,8 @@ public class MainActivity extends AppCompatActivity implements GLSurfaceView.Ren
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Log.v(TAG, "onCreate");
         super.onCreate(savedInstanceState);
+        Log.v(TAG, "onCreate");
 
         mGLSurfaceView = new GLSurfaceView(this);
         mGLSurfaceView.setEGLContextClientVersion(2);
@@ -36,8 +36,8 @@ public class MainActivity extends AppCompatActivity implements GLSurfaceView.Ren
 
     @Override
     protected void onResume() {
-        Log.v(TAG, "onResume");
         super.onResume();
+        Log.v(TAG, "onResume");
         mGLSurfaceView.onResume();
     }
 
