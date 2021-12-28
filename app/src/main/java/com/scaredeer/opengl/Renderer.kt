@@ -1,10 +1,9 @@
-package com.scaredeer.opengl;
+package com.scaredeer.opengl
 
-import android.opengl.GLSurfaceView;
-import android.util.Log;
-
-import javax.microedition.khronos.egl.EGLConfig;
-import javax.microedition.khronos.opengles.GL10;
+import android.opengl.GLSurfaceView
+import android.util.Log
+import javax.microedition.khronos.egl.EGLConfig
+import javax.microedition.khronos.opengles.GL10
 
 /**
  * ゲームのメインループに相当するクラス
@@ -15,25 +14,25 @@ import javax.microedition.khronos.opengles.GL10;
  * MainActivity はその他の UI のコードなども盛り込まれることになるので、コードの見通しが悪くなり、
  * あまり実用的ではないので、素直に分離している。
  */
-public class Renderer implements GLSurfaceView.Renderer {
-    private static final String TAG = Renderer.class.getSimpleName();
+class Renderer : GLSurfaceView.Renderer {
 
-    @Override
-    public void onSurfaceCreated(GL10 gl10, EGLConfig eglConfig) {
-        Log.v(TAG, "onSurfaceCreated");
+    companion object {
+        private val TAG = Renderer::class.java.simpleName
+    }
+
+    override fun onSurfaceCreated(gl10: GL10, eglConfig: EGLConfig) {
+        Log.v(TAG, "onSurfaceCreated")
 
         // ToDo
     }
 
-    @Override
-    public void onSurfaceChanged(GL10 gl10, int width, int height) {
-        Log.v(TAG, "onSurfaceChanged");
+    override fun onSurfaceChanged(gl10: GL10, width: Int, height: Int) {
+        Log.v(TAG, "onSurfaceChanged")
 
         // ToDo
     }
 
-    @Override
-    public void onDrawFrame(GL10 gl10) {
+    override fun onDrawFrame(gl10: GL10) {
         // ToDo
     }
 }
