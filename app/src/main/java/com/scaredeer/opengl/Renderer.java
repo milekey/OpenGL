@@ -15,7 +15,7 @@ import javax.microedition.khronos.opengles.GL10;
  * MainActivity はその他の UI のコードなども盛り込まれることになるので、コードの見通しが悪くなり、
  * あまり実用的ではないので、素直に分離している。
  */
-public class Renderer  implements GLSurfaceView.Renderer {
+public class Renderer implements GLSurfaceView.Renderer {
     private static final String TAG = Renderer.class.getSimpleName();
 
     @Override
