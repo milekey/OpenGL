@@ -17,7 +17,7 @@ import javax.microedition.khronos.opengles.GL10
 class Renderer : GLSurfaceView.Renderer {
 
     companion object {
-        private val TAG = Renderer::class.java.simpleName
+        private val TAG = Renderer::class.simpleName
     }
 
     override fun onSurfaceCreated(gl10: GL10, eglConfig: EGLConfig) {
