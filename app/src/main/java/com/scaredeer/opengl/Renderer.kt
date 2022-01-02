@@ -23,16 +23,16 @@ class Renderer : GLSurfaceView.Renderer {
     override fun onSurfaceCreated(gl10: GL10, eglConfig: EGLConfig) {
         Log.v(TAG, "onSurfaceCreated")
 
-        // ToDo
+        TODO("Not yet implemented")
     }
 
     override fun onSurfaceChanged(gl10: GL10, width: Int, height: Int) {
         Log.v(TAG, "onSurfaceChanged")
 
-        // ToDo
+        TODO("Not yet implemented")
     }
 
-    override fun onDrawFrame(gl10: GL10) {
-        // ToDo
+    override fun onDrawFrame(gl: GL10?) {
+        TODO("Not yet implemented")
     }
 }
