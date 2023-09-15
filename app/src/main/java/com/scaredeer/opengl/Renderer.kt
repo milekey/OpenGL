@@ -5,6 +5,8 @@ import android.util.Log
 import javax.microedition.khronos.egl.EGLConfig
 import javax.microedition.khronos.opengles.GL10
 
+private val TAG = Renderer::class.simpleName
+
 /**
  * ゲームのメインループに相当するクラス
  * （もちろん、画面の更新を中心としたもので、ゲームモデルの論理的なループとは必ずしも同じではないが、
@@ -15,10 +17,6 @@ import javax.microedition.khronos.opengles.GL10
  * あまり実用的ではないので、素直に分離している。
  */
 class Renderer : GLSurfaceView.Renderer {
-
-    companion object {
-        private val TAG = Renderer::class.simpleName
-    }
 
     override fun onSurfaceCreated(gl10: GL10, eglConfig: EGLConfig) {
         Log.v(TAG, "onSurfaceCreated")
